@@ -1,0 +1,298 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  scroll-behavior: smooth;
+  background-image: url(../img/background.jpg);
+}
+
+.logo img {
+  width: 100%;
+}
+
+#nav-button {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+#navbar-mobile {
+  display: none;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0x;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-links li:hover {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.navbar-links-social img {
+  padding: 0.3rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.logo {
+  width: 60px;
+  padding-left: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.logo:hover {
+  width: 70px;
+}
+
+.active {
+  color: #be2323;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+#square1 {
+  background-color: black;
+  width: 500px;
+  height: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 100px;
+  display: none;
+}
+
+#arrow {
+  transform: rotate(-90deg);
+  width: 8%;
+  position: relative;
+  top: 95px;
+  left: 20px;
+  z-index: 1;
+}
+
+#square2 {
+  background-color: black;
+  width: 500px;
+  height: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  position: relative;
+  top: 100px;
+  display: none;
+}
+
+#square3 {
+  background-color: black;
+  width: 500px;
+  height: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  position: relative;
+  top: 100px;
+  display: none;
+}
+
+#merpaket {
+  text-align: center;
+  position: relative;
+  top: 40px;
+  margin-top: 5rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+#headertext {
+  text-align: center;
+  position: relative;
+  top: 40px;
+  font-size: 3rem;
+}
+#paket {
+  text-align: center;
+  position: relative;
+  top: 40px;
+  font-weight: 300;
+  font-size: 3rem;
+  padding: 2rem 0rem;
+}
+
+span {
+  font-weight: 600;
+}
+
+#subpaket {
+  text-align: center;
+  position: relative;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+#img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+#img-container img {
+  width: 90%;
+  padding: 0rem 1rem;
+  transition: 0.2s ease-in-out;
+  align-self: auto;
+}
+
+#img-container img:hover {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 1280px) {
+  #square1 {
+    margin-top: -1rem;
+    display: none;
+  }
+
+  #square2 {
+    margin-top: -1rem;
+    display: none;
+  }
+
+  #square3 {
+    margin-top: -1rem;
+    display: none;
+  }
+
+  #merpaket {
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+
+  #img-container img {
+    width: 60%;
+    padding: 0rem 1rem;
+    margin-left: 50px;
+    transition: 0.2s ease-in-out;
+    align-self: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #nav-background {
+    background-color: black;
+    width: 250px;
+    height: 200vh;
+    position: fixed;
+    top: 0;
+    left: -20rem;
+    z-index: 2;
+    transition: 0.4s ease-in-out;
+  }
+
+  #square1 {
+    position: relative;
+    top: 150px;
+    width: 370px;
+    height: 700px;
+  }
+  #square2 {
+    position: relative;
+    top: 150px;
+    width: 370px;
+    height: 700px;
+  }
+  #square3 {
+    position: relative;
+    top: 150px;
+    width: 370px;
+    height: 700px;
+  }
+
+  #img-container img:hover {
+    transform: scale(0.95);
+  }
+
+  #nav-button {
+    position: absolute;
+    width: 45px;
+    top: 25px;
+    right: 45px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  #navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 5rem;
+    position: fixed;
+    left: -20rem;
+    transition: 0.4s ease-in-out;
+    width: 25%;
+    height: 42%;
+    z-index: 2;
+    top: 0;
+  }
+
+  .logo {
+    position: relative;
+    margin-right: 25px;
+  }
+
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    display: none;
+  }
+}

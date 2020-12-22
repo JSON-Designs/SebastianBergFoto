@@ -1,0 +1,269 @@
+* {
+  font-family: "Montserrat", sans-serif;
+
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+body {
+  background-color: black;
+  scroll-behavior: smooth;
+  background-image: url(../img/background.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+#nav-button {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+#navbar-mobile {
+  display: none;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0x;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-links li:hover {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.navbar-links-social img {
+  padding: 0.3rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.logo {
+  width: 60px;
+  padding-left: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+.logo:hover {
+  width: 70px;
+}
+
+#link {
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  color: #be2323;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.logotext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: -5rem;
+}
+
+.secondarytext {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 22rem;
+  transform-origin: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 33%;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  top: 25rem;
+}
+
+.image-container img {
+  width: 10%;
+  align-self: center;
+}
+
+.gallerygrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(9, 35vw);
+  grid-gap: 5px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery {
+  background: black;
+  height: 100vh;
+  width: 100%;
+  margin-top: 15rem;
+}
+
+.link-holder {
+  position: relative;
+  text-align: center;
+  top: 4%;
+}
+
+.gallerylinks {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0px 40px;
+  transition: 0.2s ease-in-out;
+}
+
+.gallerylinks:hover {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .secondarytext {
+    width: 80%;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .secondarytext {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+
+  #nav-background {
+    background-color: black;
+    width: 250px;
+    height: 200vh;
+    position: fixed;
+    top: 0;
+    left: -20rem;
+    z-index: 1;
+    transition: 0.4s ease-in-out;
+  }
+
+  #nav-button {
+    position: absolute;
+    width: 40px;
+    top: 25px;
+    right: 25px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    cursor: pointer;
+  }
+
+  #navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 5rem;
+    position: fixed;
+    left: -20rem;
+    transition: 0.4s ease-in-out;
+    width: 25%;
+    height: 42%;
+    z-index: 1;
+    top: 0;
+  }
+
+  .gallerylinks {
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .gallery a {
+    text-decoration: none;
+  }
+
+  .logo {
+    position: relative;
+    margin-right: 25px;
+  }
+
+  .navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logotext {
+    font-size: 2.5rem;
+    margin-bottom: -2rem;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .gallerygrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 70vw);
+    grid-gap: 5px;
+    position: relative;
+    top: 50px;
+  }
+
+  .gallery {
+    background: black;
+    height: 100vh;
+    width: 100%;
+    margin-top: -11rem;
+  }
+}
